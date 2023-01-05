@@ -195,7 +195,8 @@ namespace ChooseYourOwnAdventure
             default:
                   Console.WriteLine("alright stupid just lose then lulz");
                   return;
-      }}
+       }
+     }
     } else
     {
          Console.WriteLine("Type OPEN or KNOCK (It's quite taxxing to do these super redundant if/elses so please lets get things right the first try from now on):  ");
@@ -266,7 +267,8 @@ namespace ChooseYourOwnAdventure
             default:
                   Console.WriteLine("alright stupid just lose then lulz");
                   break;
-        }}
+        }
+     }
     } else
     {
       Console.WriteLine("YOU LOSE, YOU SUCK, YOU HAVE AIDS, JUST QUIT \n G A M E  O V E R (scrub)");
