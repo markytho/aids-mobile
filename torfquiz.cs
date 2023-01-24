@@ -15,6 +15,12 @@ namespace TrueOrFalse
       string[] questions = {"The Sun is a star.", "13/50% a fallacy?", "Muh heckin gender inequality something something..", "There are 50 states in the U.S.A.", "The affect of the AIDS virus is seen distributed equally across all demographics."};
       bool[] answers = {true, false, false, true, false};
       bool[] responses = new bool[questions.Length];
+      
+      
+    }
+
+    static void RunQuiz(string[] questions, bool[] answers)
+    {
       if (questions.Length != answers.Length)
       {
         Console.WriteLine($"Warning!! {questions.Length} does NOT equal {answers.Length}!!");
@@ -42,12 +48,6 @@ namespace TrueOrFalse
         askingIndex++;
        }
       
-      
-        for ( int i = 0; i < answers.Length; i++) {
-          string[] qresponse = new string[responses.Length];
-          qresponse[i] = responses[i].ToString();
-          Console.WriteLine($"Your response to question {i + 1} was {qresponse[i]},\nThe answer was {answers[i]}.");
-        }
         int scoringIndex = 0;
         int score = 0;
 
@@ -61,7 +61,9 @@ namespace TrueOrFalse
           }
           Console.WriteLine($"You got {score} out of {answers.Length} correct!");
         }
-      
     }
+
+
+
   }
 }
